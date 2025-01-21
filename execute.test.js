@@ -1,4 +1,4 @@
-import { initViteNode } from "./init-vite-node.mjs";
+import { initViteNode } from "./init-vite-node.js";
 
 describe("thing", () => {
   let runner, server;

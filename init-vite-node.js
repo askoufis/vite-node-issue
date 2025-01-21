@@ -9,6 +9,12 @@ export const initViteNode = async () => {
       noDiscovery: true,
       include: undefined,
     },
+    build: {
+      dynamicImportVarsOptions: {
+        // Uncommenting the line below fixes the test
+        // exclude: [/node_modules/],
+      },
+    },
   });
   await server.pluginContainer.buildStart({});
 
